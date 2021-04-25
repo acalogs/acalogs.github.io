@@ -1,0 +1,24 @@
+#b1 { grid-area: b1; }
+#b2 { grid-area: b2; }
+#b3 { grid-area: b3; }
+#b4 { grid-area: b4; }
+#b5 { grid-area: b5; }
+
+#grid2 {
+    display: grid;
+    grid-template-areas:
+        "b1 b1 b1 b1"
+        "b2 b2 b2 b3"
+        "b4 b4 b4 b5";
+
+    grid-row-gap: 1rem;
+}
+
+@media (max-width: 512px) {
+    #grid2 {
+        grid-template-areas:
+            "b1 b1 b1"
+            "b2 b2 b3"
+            "b4 b4 b5";
+    }
+}

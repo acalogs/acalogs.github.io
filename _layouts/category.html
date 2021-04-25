@@ -1,0 +1,19 @@
+---
+title: Category
+layout: default
+permalink: '/category.html'
+---
+<h1>Category</h1>
+
+  <dl>
+
+    {% for category in site.categories %}
+ 
+    <h2>{{ category.name }}</h2>
+    <h3>{{ category.content | markdownify }}</h3>      <p>
+      <a href="{{ category.url }}">Learn more ></a>
+    </p>
+    
+    {% endfor %}
+
+</dl>
