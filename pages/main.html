@@ -9,7 +9,7 @@ permalink: "/"
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello Bulma!</title>
+		<title>Logs</title>
 		<link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -38,7 +38,8 @@ a:active {
 
 		</style>
 	</head>
-	<body>
+
+<body>
 
 <!-- .hero -->
 <section class="hero is-fullheight background1">
@@ -47,42 +48,25 @@ a:active {
 <nav class="hero-head">
 	<div class="columns is-mobile is-marginless heading has-text-weight-bold">
 		<div class="column left">
-            <p><a href="/" class="navbar-item has-text-white">L o G S</a></p>
-        <!--
-			<figure class="navbar-item image">
-                <a href="/">
-                    <img src="assets/images/logo_white.svg" style="width: 6.25rem; height: 1rem;">
-                </a>
-			</figure>
-        -->
+			<p><a href="/" class="navbar-item has-text-white">L o G S</a></p>
 		</div>	
-		<div class="">
-			<div class="navbar-brand">
-				<a role="button" class="navbar-burger" style="color:white" aria-label="menu" aria-expanded="false" data-target="navMenu">
+		<div class="navbar-brand">
+				<a role="button" class="navbar-burger burger" style="color:white" aria-label="menu" aria-expanded="false" data-target="navMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
+		</div>
+		<div class="navbar-menu" id="navMenu">
+			<div class="column center desktop">
+				<p><a href="/about" class="navbar-item has-text-black">ABOUT</a></p>
+				<p><a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="navbar-item has-text-black">YOUTUBE</a></p>
+				<p><a href="https://www.instagram.com/acalogs/" class="navbar-item has-text-black">INSTAGRAM</a></p>
+				<p><a href="/board" class="navbar-item has-text-black">게시판</a></p>
 			</div>
-			<div class="navbar-menu" id="navMenu">
-				<div class="navbar-start">
-					<div class="column center desktop">
-						<p><a href="/about" class="navbar-item has-text-black">ABOUT</a></p>
-						<p><a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="navbar-item has-text-black">YOUTUBE</a></p>
-						<p><a href="https://www.instagram.com/acalogs/" class="navbar-item has-text-black">INSTAGRAM</a></p>
-						<p><a href="/board" class="navbar-item has-text-black">게시판</a></p>
-					</div>
-					<div class="column right">
-						<p class="navbar-item desktop has-text-light desktop">CONTACT US</p>
-						<p class="navbar-item desktop has-text-light desktop">SIGN IN</p>
-						<!--<figure class="navbar-item image">
-							<i class="fas fa-3x fa-bars has-text-light"
-								style="width: 1rem; height: 1rem;"></i>
-						</figure>--->
-					</div>
-				</div>
-				<div class="navbar-end">
-				</div>
+			<div class="column right">
+				<p class="navbar-item desktop has-text-light desktop">CONTACT US</p>
+				<p class="navbar-item desktop has-text-light desktop">SIGN IN</p>
 			</div>
 		</div>
 	</div>
@@ -227,7 +211,6 @@ a:active {
 		</div>
 	</main>
 </section>
-
 
 </body>
 </html>
