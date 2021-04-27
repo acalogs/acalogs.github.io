@@ -14,22 +14,22 @@ layout: default
 </style>
 </head>
 <body>
-  <section class="hero is-primary is-medium">
+  <section class="hero is-success is-fullheight">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
-      <nav class="navbar">
+      <header class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
               <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
             </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
+          <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item is-active">
                 Home
@@ -41,7 +41,7 @@ layout: default
                 Documentation
               </a>
               <span class="navbar-item">
-                <a class="button is-primary is-inverted">
+                <a class="button is-success is-inverted">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -51,35 +51,68 @@ layout: default
             </div>
           </div>
         </div>
-      </nav>
+      </header>
     </div>
   
-    <nav class="hero-head">
-      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
-        <div class="column left">
-          <a href="/" class="navbar-item has-text-white">L o G S</a>
-        </div>	
-        <div class="navbar-brand">
-          <span role="button" class="navbar-burger" style="color:white" data-target="navMenuHero" aria-label="menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div class="navbar-menu" id="navMenuHero">
-          <div class="column center desktop">
-            <a href="/about" class="navbar-item has-text-black">ABOUT</a>
-            <a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="navbar-item has-text-black">YOUTUBE</a>
-            <a href="https://www.instagram.com/acalogs/" class="navbar-item has-text-black">INSTAGRAM</a>
-            <a href="/board" class="navbar-item has-text-black">게시판</a>
-          </div>
-          <div class="column right">
-            <p class="navbar-item desktop has-text-light desktop">CONTACT US</p>
-            <p class="navbar-item desktop has-text-light desktop">SIGN IN</p>
-          </div>
-        </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Title
+        </p>
+        <p class="subtitle">
+          Subtitle
+        </p>
       </div>
-    </nav>
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a>Overview</a></li>
+            <li><a>Modifiers</a></li>
+            <li><a>Grid</a></li>
+            <li><a>Elements</a></li>
+            <li><a>Components</a></li>
+            <li><a>Layout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section class="hero">
+    <!-- Hero head: will stick at the top -->
+    <section class="hero is-fullheight background1">
+      <!-- .hero-head -->
+      <nav class="hero-head">
+        <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+          <div class="column left">
+            <a href="/" class="navbar-item has-text-white">L o G S</a>
+          </div>	
+          <div class="navbar-brand">
+            <span role="button" class="navbar-burger" style="color:white" data-target="navMenuHero" aria-label="menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div class="navbar-menu" id="navMenuHero">
+            <div class="column center desktop">
+              <a href="/about" class="navbar-item has-text-black">ABOUT</a>
+              <a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="navbar-item has-text-black">YOUTUBE</a>
+              <a href="https://www.instagram.com/acalogs/" class="navbar-item has-text-black">INSTAGRAM</a>
+              <a href="/board" class="navbar-item has-text-black">게시판</a>
+            </div>
+            <div class="column right">
+              <p class="navbar-item desktop has-text-light desktop">CONTACT US</p>
+              <p class="navbar-item desktop has-text-light desktop">SIGN IN</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      </section>
 
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
