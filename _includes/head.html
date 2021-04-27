@@ -6,6 +6,24 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+	  <title>Pusher Test</title>
+	  <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+	  <script>
+	
+		Pusher.logToConsole = true;
+	
+		var pusher = new Pusher('53b4385b134b93cb4d92', {
+		  cluster: 'ap3'
+		});
+	
+		var channel = pusher.subscribe('my-channel');
+		channel.bind('my-event', function(data) {
+		  alert(JSON.stringify(data));
+		});
+	  </script>
+
     <style>
         /* background */		
 .background1 {
