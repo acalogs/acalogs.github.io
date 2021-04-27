@@ -36,6 +36,17 @@ a:active {
     text-decoration: none;
 }
 
+.parent {
+	width: 100%;
+	text-align: center;
+}
+
+.child {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+}
+
 div.topnav {
 	list-style-type: none;
 	margin: 0;
@@ -44,8 +55,83 @@ div.topnav {
 	background-color: transparent;
 }
 
-@media screen and (max-width: 1024px) { div.topnav {float: none;} }
-@media screen and (max-width:  768px) { div.topnav {float: none;} }
+@media screen and (max-width: 1024px) { div.topnav a {float: none;} }
+@media screen and (max-width:  768px) { div.topnav a {float: none;} }
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.flex-item-1 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-2 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-3 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-4 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-5 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-6 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-7 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-8 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-9 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-item-10 {
+	background-color: transparent;
+	padding: 10px;
+	flex: 25%;
+}
+
+
+
+/* Responsive layout - makes a one column-layout instead of four-column layout */
+@media (max-width: 1024px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}
 
 	</style>
 </head>
@@ -55,8 +141,8 @@ div.topnav {
 	<!-- .hero-head -->
 	<div class="hero-head">
 		<div class="columns is-mobile is-marginless heading has-text-weight-bold">
-			<div class="column left">
-				<a href="/" class="navbar-item has-text-white">L o G S</a>
+			<div class="column">
+				<div class="navbar-item"><a href="/" class="has-text-white">L o G S</a></div>
 			</div>	
 			<div class="navbar-brand">
 				<span role="button" class="navbar-burger" style="color:white" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -65,16 +151,17 @@ div.topnav {
 					<span></span>
 				</span>
 			</div>
-			<div class="navbar-menu topnav" id="navMenu" style="padding-left: 35px;">
-				<div class="column center desktop">
+			<div class="navbar-menu topnav" id="navMenu">
+				<div class="column center desktop flex-container is-7">
 					<a href="/about" class="navbar-item has-text-black">ABOUT</a>
 					<a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="navbar-item has-text-black">YOUTUBE</a>
 					<a href="https://www.instagram.com/acalogs/" class="navbar-item has-text-black">INSTAGRAM</a>
+					<a href="https://cafe.naver.com/acalogs" class="navbar-item has-text-black">NAVERCAFE</a>
 					<a href="/board" class="navbar-item has-text-black">게시판</a>
 				</div>
-				<div class="column right">
-					<a class="navbar-item desktop has-text-light desktop">CONTACT US</a>
-					<a class="navbar-item desktop has-text-light desktop">SIGN IN</a>
+				<div class="column right flex-container">
+					<a href="" class="navbar-item has-text-white">CONTACT US</a>
+					<a href="" class="navbar-item has-text-white">SIGN IN</a>
 				</div>
 			</div>
 		</div>
