@@ -42,6 +42,11 @@ collections:
   categories:
     output: true
 
+analytics:
+  provider: google
+  google:
+    tracking_id: G-MZ4KCS16JS
+
 # Front Matter Defaults
 # By adding this, you can remove layout from the front matter of all pages and posts.
 defaults:
