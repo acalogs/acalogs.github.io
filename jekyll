@@ -1,0 +1,20 @@
+/* m1 mac ruby version jekyll serve */
+/* please enter chmod +x [file-name] */
+/* you can just type "open [file-name]" in the repository file to open this file */
+
+
+#!/bin/bash
+
+cd acalogs
+
+eval "$(rbenv init -)"
+
+rbenv global 2.7.2
+
+arch -X86_64 gem install --user-install bundler jekyll
+
+arch -X86_64 bundle update
+
+arch -X86_64 bundle install
+
+bundle exec jekyll serve
