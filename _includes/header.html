@@ -1,0 +1,71 @@
+	<!-- .hero-head -->
+	<div class="hero-head">
+		<div class="columns is-mobile is-marginless heading has-text-weight-bold">
+			<div class="column">
+				<div class="navbar-item"><a href="/" class="has-text-white">L o G S</a></div>
+			</div>	
+			<div class="navbar-brand">
+				<span role="button" class="navbar-burger" style="color:white" data-target="navMenu" aria-label="menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div class="navbar-menu topnav" id="navMenu">
+				<div class="column center desktop flex-container is-7">
+					<div class="navbar-item">
+						<a href="/about" class="has-text-black">ABOUT</a>
+					</div>
+					<div class="navbar-item">
+						<a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg" class="has-text-black">YOUTUBE</a>
+					</div>
+					<div class="navbar-item">
+						<a href="https://www.instagram.com/acalogs/" class="has-text-black">INSTAGRAM</a>
+					</div>
+					<div class="navbar-item">
+						<a href="https://cafe.naver.com/acalogs" class="has-text-black">NAVERCAFE</a>
+					</div>
+					<div class="navbar-item">
+						<a href="/board" class="has-text-black">BOARD</a>
+					</div>
+				</div>
+				<div class="column right flex-container">
+					<div class="navbar-item">
+						<a href="" class="has-text-white">CONTACT US</a>						
+					</div>
+					<div class="navbar-item">
+						<a href="" class="has-text-white">SIGN IN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.hero-head -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+    
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+    
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+    
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+    
+        });
+      });
+    }
+    
+    });
+    </script>

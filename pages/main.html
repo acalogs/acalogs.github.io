@@ -124,6 +124,21 @@ div.topnav {
 	flex: 25%;
 }
 
+.videoWrapper {
+	overflow: hidden;
+	padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	padding-top: 25px;
+	position: relative;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 
 /* Responsive layout - makes a one column-layout instead of four-column layout */
@@ -218,9 +233,8 @@ div.topnav {
 			<p class="subtitle is-7 has-text-white">모집중</p>
 		</div>
 		<div id="a5" class="center-column">
-			<a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold"
-				style="width: 100%; border: 0.15em solid white;">
-				LoGS 지원하기
+			<a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg?sub_confirmation=1" class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
+				Subscribe
 			</a>
 		</div>
 	</div>
@@ -229,49 +243,8 @@ div.topnav {
 </section>
 <!-- /.hero -->
 
-<section class="hero-body is-fullheight section redblue">
-	<div class="container">
-		<div class="column">
-			<p class="title has-text-white" style="text-align: center; font-size: 24px; padding-top: 2.5rem;">고려대 X 연세대</p>
-			<p class="title black2white" style="text-align: center; font-size: 52px; padding-bottom: 2rem;">응원가 메들리</p>
-		</div>
-	</div>
-	<div class="container">
-		<div class="column">
-			<article class="media is-info">
-				<div class="media-content">
-					<div class="content">
-						<div class="videoWrapper" style="text-align: center;">
-							<iframe src="https://www.youtube.com/embed/Z33TRapBYt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-	</div>
-	<main class="hero-foot center" style="padding: 2rem;">
-		<div id="grid" style="width:768px;">
-			<div id="a2" class="center-column">
-				<p class="title has-text-white">
-					<i class="fas fa-tachometer-alt has-text-grey-light" style="width: 0.75em; height: 0.75em;"></i>
-					2019<span class="is-size-5">년</span>
-				</p>
-				<p class="subtitle has-text-white is-7">최초 공개</p>
-			</div>
-			<div id="a3" class="center-column" style="border-left: 1px solid gray;">
-				<p class="title has-text-white"><span class="is-size-5"></span>1M<span class="is-size-5">회</span></p>
-				<p class="subtitle is-7 has-text-white">조회수</p>
-			</div>
-			<div id="a5" class="center-column">
-				<a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg?sub_confirmation=1" class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
-				Subscribe
-				</a>
-			</div>
-		</div>
-	</main>
-</section>
 
-<section class="hero-body is-fullheight section background_black">
+<section class="hero-body is-fullheight  background_black">
 	<div class="container">
 		<div class="column">
 			<p class="title has-text-white" style="text-align: center; font-size: 24px; padding-top: 2.5rem;">Alan Walker</p>
@@ -313,8 +286,53 @@ div.topnav {
 				<p class="subtitle is-7 has-text-white">조회수</p>
 			</div>
 			<div id="a5" class="center-column">
-				<a href="https://www.youtube.com/channel/UCkYeSrGrBuMgk5PczSKl5eg?sub_confirmation=1" class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
-					Subscribe
+				<a href="/spectre" class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
+					더 알아보기
+				</a>
+			</div>
+		</div>
+	</main>
+</section>
+
+
+
+
+<section class="hero-body is-fullheight  redblue">
+	<div class="container">
+		<div class="column">
+			<p class="title has-text-white" style="text-align: center; font-size: 24px; padding-top: 2.5rem;">고려대 X 연세대</p>
+			<p class="title black2white" style="text-align: center; font-size: 52px; padding-bottom: 2rem;">응원가 메들리</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="column">
+			<article class="media is-info">
+				<div class="media-content">
+					<div class="content">
+						<div class="videoWrapper" style="text-align: center;">
+							<iframe src="https://www.youtube.com/embed/Z33TRapBYt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	<main class="hero-foot center" style="padding: 2rem;">
+		<div id="grid" style="width:768px;">
+			<div id="a2" class="center-column">
+				<p class="title has-text-white">
+					<i class="fas fa-tachometer-alt has-text-grey-light" style="width: 0.75em; height: 0.75em;"></i>
+					2019<span class="is-size-5">년</span>
+				</p>
+				<p class="subtitle has-text-white is-7">최초 공개</p>
+			</div>
+			<div id="a3" class="center-column" style="border-left: 1px solid gray;">
+				<p class="title has-text-white"><span class="is-size-5"></span>1M<span class="is-size-5">회</span></p>
+				<p class="subtitle is-7 has-text-white">조회수</p>
+			</div>
+			<div id="a5" class="center-column">
+				<a href="/cheering_medley" class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
+				더 알아보기
 				</a>
 			</div>
 		</div>
